@@ -5,7 +5,7 @@ function findSubstring(s: string, words: string[]): number[] {
 };
 
 function splitString(str: string, n:number): string[] {
-    let res = [];
+    let res: string[] = [];
     for (let i=0;i<str.length;i = i+n) {
         res.push(str.slice(i, i+n))
     }
@@ -13,8 +13,8 @@ function splitString(str: string, n:number): string[] {
 }
 
 function getAllSubStringsBasedOnLimit(strn:string, n:number, length:number, words:string[]): number[] {
-    let res = [];
-    let limit = 0;
+    let res:number[] = [];
+    let limit:number = 0;
     let strLength = length;
     const wordMap = new Map();
     
